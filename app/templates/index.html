@@ -1,11 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+     <title>Йога старовера</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../static/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <h1>Telegram: @semyonkrutoleivich</h1>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header-wrapper">
+                        <div class="header_logo">
+                            <img src="../static/images/header/logo.png" alt="" class="logo">
+                        </div>
+                        <div class="header_nav">
+                            <a href="#hero" class="header_nav__link hero-link active-link">Главная</a>
+                            <a href="#info" class="header_nav__link desc-link">Описание</a>
+                            <a href="#rewievs" class="header_nav__link rewievs-link">Отзывы</a>
+                            <a href="#yoga" class="header_nav__link yoga-link">Об Йоге</a>
+                            <a href="#master" class="header_nav__link master-link">кто Мастер?</a>
+                            <a href="#price" class="header_nav__link price-link">Цена</a>
+                            <a  href="#footer" class="header_nav__link quest-link">Вопросы?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-hide" id="hero"></div>
+        <img src="../static/images/hero/snow.png" data-aos="fade-down" alt="" class="hero-snow ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="hero-title">Пожизненный доступ<br>
+                        к практике славянской Йоги для людей,<br>
+                        стремящихся к Восхождению<br>
+                        и близких по Духу!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="hero_button-wrapper">
+                        <a href="#price" class="hero_button">Узнать цену</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-start order-1 order-md-2">
+                    <p class="hero-text">1. Внести взнос на банковскую карту.<br>
+                        2. Сделай скриншот оплаты.<br>
+                        3. Отправь заявку в <a href="https://instagram.com/yoga.ctarovera?igshid=139f8s6l9xgt5" target="_blank" class="social-link">@yoga.ctarovera</a> и скрин в Директ.<br>
+                        4. Ожидай подтверждения в скором времени.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="social-icons hero-social">
+                        <a href="https://www.instagram.com/putnik.starover/" class="icon-inst" target="_blank"></a>
+                        <a id="info" href="https://vk.com/pokolenierazuma" class="icon-vk" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <img src="../static/images/info/info-snow.png" data-aos="fade-left" alt="" class="info-snow">
+        <img src="../static/images/info/info-snow-mini.png" data-aos="fade-down" alt="" class="info-snow-mini mini-snow-offset">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="title">Пожизненный доступ к онлайн-практикам<br>
+                        и закрытому чату единомышленников<br>
+                        с обратной связью от мастера.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-lg-2 offset-md-1 offset-lg-2">
+                    <div class="info_card-wrapper">
+                        <img src="../static/images/info/img-1.png" alt="Прямые эфиры" class="info_card__img">
+                        <h3 class="info_card__text">Прямые эфиры<br>
+                            2 раза в неделю<br>
+                            с инструктором онлайн.</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2 offset-md-1 offset-lg-1">
+                    <div class="info_card-wrapper">
+                        <img src="../static/images/info/img-2.png" alt="Тайные знания" class="info_card__img">
+                        <h3 class="info_card__text">Тайные знания,<br>
+                            которые дошли к нам<br>
+                            от наших предков.</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2 offset-md-1 offset-lg-1">
+                    <div class="info_card-wrapper">
+                        <img src="../static/images/info/img-3.png" alt="Значение слов и Буковъ" class="info_card__img">
+                        <h3 class="info_card__text">Сакральное значение<br>
+                            слов и Буковъ.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rewievs">
+        <div class="rewievs-hide" id="rewievs"></div>
+        <img src="../static/images/rewievs/snow-rewievs.png" alt="" data-aos="fade-right" class="snow-rewievs">
+        <img src="../static/images/rewievs/rewievs-snow-mini.png" alt="" data-aos="fade-down" class="snow-rewievs-mini mini-snow-offset">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="rewievs_title">
+                        Если ты один из нас, стань в ряды, Добрый Молодец!<br>
+    Если серденько поёт — с нами пой, Красна Девица!
+                    </h2>
+                    <div class="slider">
+                        <img src="../static/images/rewievs/rewies/rewiew-1.jpg" alt="1" class="slider__item">
+                        <img src="../static/images/rewievs/rewies/rewiew-2.jpg" alt="2" class="slider__item">
+                        <img src="../static/images/rewievs/rewies/rewiew-3.jpg" alt="3" class="slider__item">
+                        <img src="../static/images/rewievs/rewies/rewiew-4.jpg" alt="4" class="slider__item">
+                        <img src="../static/images/rewievs/rewies/rewiew-5.jpg" alt="5" class="slider__item">
+                        <img src="../static/images/rewievs/rewies/rewiew-6.jpg" alt="6" class="slider__item">
+                        <img src="../static/images/rewievs/rewies/rewiew-7.jpg" alt="7" class="slider__item">
+                        <img  src="../static/images/rewievs/rewies/rewiew-8.jpg" alt="8" class="slider__item">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yoga">
+        <div id="yoga" class="yoga-hide"></div>
+        <img src="../static/images/yoga/yoga-snow.png" data-aos="fade-left" alt="" class="yoga-snow">
+        <img src="../static/images/yoga/yoga-snow-mini.png" data-aos="fade-down" alt="" class="yoga-snow-mini mini-snow-offset">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1">
+                    <div class="slider2">
+                        <div class="slider__item">
+                            <div class="slider__item-wrapper">
+                                <p class="yoga_text"><span class="yoga_text-bold">Славянская Йога</span> — учение бабушки Йогини (Яги)<br>
+                                    — праисточник Ведической Йоги и всевозможных йогических направлений.</p>
+                                <p class="yoga_text">На практике мы работаем с энергиями, <span class="yoga_text-bold">учимся слышать своё тело,
+                                    укрепляем мышцы и сухожилия</span>, учимся чувствовать энергию,
+                                    правильно дышать, воспринимать Мир и себя в Миру как его частицы.</p>
+                                <p class="yoga_text"><span class="yoga_text-bold">Изучаем Всеясветную Грамоту</span>, учимся говорить,
+                                    думать и поступать правильно, знакомимся с Заповедальностью.</p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-wrapper">
+                                <p class="yoga_text"><span class="yoga_text-bold">Учимся очищать себя</span>: как телесно, так и тонкоматериально
+                                    <span class="yoga_text-bold">под руководством мастера.</span></p>
+                                <p class="yoga_text">Это место для тех, кто ищет ответы, но чувствует иsкажение в том,
+                                    что даёт современная «наука», религия, эsотерика, конsпирология
+                                    и различные «духовные» школы.</p>
+                                <p class="yoga_text">Место для тех, кто целью своей имеет Восхождение и РАзвитие,
+                                и стремиться сегодня быть лучше, чем вчера, а завтра
+                                — быть лучше, чем сегодня.</p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-wrapper">
+                                <p class="yoga_text">Место, в котором ты <span class="yoga_text-bold">обретёшь единомышленников</span>
+                                    — светлых людей, объединённых общей традицией,
+                                    ценностями и Коллективным Духом Разумом.</p>
+                                <p class="yoga_text">Место, где очистится твой Ум и Телеса, укрепится твой Дух и Плоть,
+                                    углубятся <span class="yoga_text-bold">знания о Строении Мироздания</span> и Его Законах,
+                                    создадутся условия для <span class="yoga_text-bold">Активации Родовой Памяти.</span></p>
+                                <p class="yoga_text">Ты можешь не знать, куда тебе дальше идти, но ты будешь там,
+                                    где должен быть. <span class="yoga_text-bold">Что говорит твоё Сердце?</span> Что это за место?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="master">
+        <div class="master-hide"  id="master"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="master_img-wrapper">
+                        <img src="../static/images/master/master.png" alt="Мастер" class="master_img">
+                        <img src="../static/images/master/master-img-mini.jpg" alt="Мастер" class="master_img-mini">
+                    </div>
+                </div>
+                <img src="../static/images/master/master-snow.png" data-aos="fade-left" alt="" class="master-snow">
+                <img src="../static/images/master/master-snow-mini.png" data-aos="fade-down" alt="" class="master-snow-mini mini-snow-offset">
+                <div class="col-md-7 offset-md-1">
+                    <h3 class="master_title">Николай РусНакъ  |  @putnik.starover
+                    </h3>
+                    <p class="master_text">ЗнаниеНосец. Автор трансформационного курса «Исцеление Знанием».
+                        Исцеляет Душу через Энергию, Слово и Тело.
+                        </p>
+                    <p class="master_text">Обладатель знаний в сферах эзотерики, йоги, альтернативной истории<br>
+                        и древней магии.
+                        </p>
+                    <p class="master_text">Путешествует по России, Индии, Азии, Европе и Индонезии.
+                    </p>
+                    <p class="master_text">От Российских Монастырей до Гималайских Гор, Индийских Ашрамов,
+                        Островов Шри-Ланки и Бали, и других сакральных мест Планеты.
+                        </p>
+                    <h4 class="master_sub-text">Преподаватель Хатха Йоги. Проводит по 10 часов практики в ретритах.</h4>
+                    <h4 class="master_sub-text">2 года странствий и жизни в Монастырях России.</h4>
+                    <h4 class="master_sub-text">12 лет Русского Рукопашного Боя.</h4>
+                    <h4 class="master_sub-text">Уже пол года проводит в голоде более 600 часов в месяц.</h4>
+                    <h4 class="master_sub-text">Хранитель знаний Родовой Памяти и Славянской Грамоты.</h4>
+                    <h4 class="master_sub-text">Носитель Родовых знаний Воинского Питания.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price">
+        <div class="price-hide"  id="price"></div>
+        <img src="../static/images/price/price-snow.png" alt="" data-aos="fade-right" class="price-snow">
+        <img src="../static/images/price/price-snow-mini.png" alt="" data-aos="fade-down" class="price-snow-mini mini-snow-offset">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="price_top-wrapper">
+                        <h2 class="price_title">1470 рублей</h2> 
+                        <img src="../static/images/price/button_i.png" alt="" class="price_help-button">
+                        <div class="price_help">
+                            <p class="price_help-text">
+                                1. Внести взнос на банковскую карту.<br>
+                                2. Сделай скриншот оплаты.<br>
+                                3. Отправь заявку в <a href="https://instagram.com/yoga.ctarovera?igshid=139f8s6l9xgt5" class="social-link" target="_blank">@yoga.ctarovera</a> и скрин в Директ.<br>
+                                4. Ожидай подтверждения в скором времени.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="price_text">— единоразовый взнос за <span class="price_text-orange">пожизненный доступ</span> к Твоему Месту Силы,
+                        пристанищу и клубу людей — осознанных и осознающих,
+                        дело делающих и Жизнь рекущих.
+                        Сильных и смелых, светлых и славных друзей и другинь твоих!</p>
+                    <p class="price_sub-text">Йога онлайн 2 раза в неделю.<br>
+                        Доступ к закрытому чату.<br>
+                        Дыхательные практики.<br>
+                        Изучение культуры, традиций и углубление в Первоисточники о Процессах Мироздания.<br>
+                        Обратная связь от мастеров и кураторов.<br>
+                        Подарки и здравые конкурсы.</p>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <img src="../static/images/price/telephon.png" alt="tepephon" class="price_telephon">
+                    <a href="https://capu.st/billf4fd6140-853d"><button class="price_button">Внести 1470 рублей</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <img src="../static/images/footer/footer-snow.png" data-aos="fade-left" alt="" class="footer-snow">
+        <img src="../static/images/footer/footer-snow-mini.png" data-aos="fade-down" alt="" class="footer-snow-mini mini-snow-offset">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-7 ml-auto mr-auto">
+                    <div class="footer__inner">
+                        <h1 class="footer__title">Остались вопросы?</h1>
+                    </div>
+                    <form method="POST" id='quest_form' action="">
+                    <textarea id="" cols="30" rows="10" class="footer__textarea" placeholder="Напишите что Вас интересует.." name="question"></textarea>
+                    <div class="footer__input-wrapper">
+                        <input type="text" class="footer__input" name="phone_or_email" placeholder="Телефон и/или почтовый ящик">
+                        <input class="footer__input__button" type="submit" value=""></input>
+                    </div>
+                    </form>
+                    <div class="social-icons footer-social">
+                        <a href="https://www.instagram.com/putnik.starover/" class="icon-inst" target="_blank"></a>
+                        <a href="https://vk.com/pokolenierazuma" class="icon-vk" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+                    <div class="footer__label-wrapper">
+                        <h3 class="footer__label">all rights reserved 2021  |  design by  <a href="https://t.me/yamayadesign">CDA.company</a></h3>
+                    </div>
+        </div>
+    </div>
+
+
+    <div class="alerts">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for msg in get_flashed_messages() %}
+                <div class="flash">{{msg}}</div>
+        {% endfor %}
+        <script>
+        var messages = document.getElementsByClassName('flash');
+        for (var i=0; i<messages.length; i++) {
+            alert(messages[i].textContent);
+        }
+        </script>
+    {% endif %}
+    {% endwith %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/slick.min.js"></script>
+    <script type="text/javascript" src="../static/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
